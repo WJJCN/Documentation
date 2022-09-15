@@ -3,6 +3,7 @@ In dit bestand komt alle onderzoek te staan die wij voor dit project hebben uitg
 
 ## Table of Contents
 1. [Data van websites afhalen](#data-van-websites-afhalen)
+1.1 [Scraper taal](#scraper-taal)
 1.1 [Opties](#opties)
 3. [Example2](#example2)
 4. [Third Example](#third-example)
@@ -10,6 +11,14 @@ In dit bestand komt alle onderzoek te staan die wij voor dit project hebben uitg
 
 ## Data van websites afhalen
 Wij moeten voor WoC een oplossing vinden om data te kunnen controleren bij retailers. Hiervoor hebben wij onderzoek gedaan om de beste methode hiervoor te gebruiken en we hebben gekeken naar de taal die wij gaan gebruiken.
+
+### Scraper taal
+
+Er zijn veel mogelijkheden voor het selecteren van een taal bij het maken van een scraper. Daarom is het belangrijk om eerst een goede programmeertaal te kiezen. Volgens de eisen en wensen van WoC moet de manier waarop het programma geschreven wordt onderhoudbaar en scaleble zijn. Hierdoor wordt de scope voor de programmeertalen al snel verkleind naar JavaScript of Python.
+
+Python is momenteel de meest gekozen taal voor het maken van een web scraper. Dit omdat hier veel libraries voor zijn die regelmatig worden geüpdatet, die het maken van een scraper veel vereenvoudigen.
+
+De opvolgers voor Python zijn Node.js of Ruby, deze twee talen worden een stuk minder gebruikt bij het maken van web scrapers. Node.js is veel gebruikt bij het maken van eenvoudige web scrapers, dit is niet helemaal bruikbaar voor onze toepassing. Ruby is op zich een stukje trager als de andere twee, daarbij komt ook nog eens kijken dat er weinig (duidelijke) libraries zijn.
 
 ### Opties
 Voor het kunnen controleren van data heb je de volgende mogelijkheden:
