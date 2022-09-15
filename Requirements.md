@@ -3,6 +3,8 @@
 Dit zijn de requirements vormgegeven volgens Moscow, gesorteerd op functionele en non- functionele requirements.  
 **FR** staat voor functionele requirement.  
 **NF** staat voor non-functionele requirement.  
+**B** staat voor beperking.  
+**K** staat voor kwaliteitseis.
 ___
 
 ### **Functionele requirements**
@@ -27,18 +29,18 @@ ___
 
 **FR-10** Als ontwikkelaar wil ik gebruik maken van een proxy server zodat ik vanaf nieuwe IP adressen requests kan opvragen per retailer.
 
-|               |Must    |Should  |Could   |Won't   |
-|----------------|-----------------------------------------|--------|--------|--------|--------|
-|FR-01|x|
-|FR-02||x|
-|FR-03|x|
-|FR-04|x|
-|FR-05|x|
-|FR-06||||x|
-|FR-07|x|
-|FR-08||x|
-|FR-09|x|
-|FR-10||x|
+|        |Must    |Should  |Could   |Won't   |
+|--------|---------|--------|--------|--------|
+|FR-01|x|-|-|-|
+|FR-02|-|x|-|-|
+|FR-03|x|-|-|-|
+|FR-04|x|-|-|-|
+|FR-05|x|-|-|-|
+|FR-06|-|-|-|x|
+|FR-07|x|-|-|-|
+|FR-08|-|x|-|-|
+|FR-09|x|-|-|-|
+|FR-10|-|x|-|-|
 ___
 
 ### **Non-functionele requirements**
@@ -61,14 +63,14 @@ ___
 
 **NF-09** Als gebruiker wil ik dat de website binnen één seconden is geladen.
 
-|               |Must    |Should  |Could   |Won't   |
-|----------------|-----------------------------------------|--------|--------|--------|--------|
-|NF-01|x|
-|NF-02|x|
-|NF-03|x|
-|NF-04|||x|
-|NF-05||x|
-|NF-06||x|
-|NF-07||||x|
-|NF-08||x|
-|NF-09|x|
+|  -   |Must    |Should  |Could   |Won't   |
+|---|--------|--------|--------|--------|
+|NF-01|x|-|-|-|
+|NF-02|x|-|-|-|
+|NF-03|x|-|-|-|
+|NF-04|-|-|x|-|
+|NF-05|-|x|-|-|
+|NF-06|-|x|-|-|
+|NF-07|-|-|-|x|
+|NF-08|-|x|-|-|
+|NF-09|x|-|-|-|
