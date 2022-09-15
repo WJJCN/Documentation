@@ -2,10 +2,10 @@
 In dit bestand komt alle onderzoek te staan die wij voor dit project hebben uitgevoerd.
 
 ## Table of Contents
-1. [Data van websites afhalen](#data-van-websites-afhalen)
-  1.1 [Scraper taal](#scraper-taal)
-  1.2 [Opties](#opties)
-  1.3 [Gekozen optie](#gekozen-optie)
+* [Data van websites afhalen](#data-van-websites-afhalen)
+* [Scraper taal](#scraper-taal)
+* [Opties](#opties)
+* [Gekozen optie](#gekozen-optie)
 
 ## Data van websites afhalen
 Wij moeten voor WoC een oplossing vinden om data te kunnen controleren bij retailers. Hiervoor hebben wij onderzoek gedaan om de beste methode hiervoor te gebruiken en we hebben gekeken naar de taal die wij gaan gebruiken.
