@@ -2,9 +2,7 @@
 # **Requirements**
 Dit zijn de requirements vormgegeven volgens Moscow, gesorteerd op functionele en non- functionele requirements.  
 **FR** staat voor functionele requirement.  
-**NF** staat voor non-functionele requirement.  
-**B** staat voor beperking.  
-**K** staat voor kwaliteitseis.
+**NF** staat voor non-functionele requirement.
 ___
 
 ### **Functionele requirements**
