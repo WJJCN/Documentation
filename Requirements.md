@@ -7,42 +7,35 @@ ___
 
 ### **Functionele requirements**
 
-**FR-01** Als gebruiker wil ik verschillende retailers op mijn dashboard kunnen zien.
+**FR-01** Als gebruiker wil ik verschillende brands op de landing page zien, zodat ik mijn brand kan kiezen.
 
-**FR-02** Als gebruiker wil ik kunnen kiezen van welke retailer ik de score kan ontvangen zodat ik per retailer een overzicht heb van de score.
+**FR-02** Als gebruiker wil ik verschillende retailers zien die bij de brand horen die ik heb aangeklikt, zodat ik naar die retailer kan gaan.
 
-**FR-03** Als gebruiker wil ik kunnen inloggen.
+**FR-03** Als gebruiker wil ik verschillende producten zien die bij de retailer beschikbaar zijn van de brand die eerder is gekozen, zodat ik de totale score kan zien.
 
-**FR-04**  Als gebruiker wil ik de live score kunnen zien van de correct geplaatste content per brand bij een retailer zodat ik een duidelijk overzicht heb van de scores in gehele percentages.
+**FR-04** Als gebruiker wil ik een specifiek product zien van een brand die bij de retailer beschikbaar is, zodat ik specifiekere data over de live score kan zien.
 
-**FR-05** Als administrator wil ik een account kunnen aanmaken zodat gebruikers kunnen inloggen.
+**FR-05** Als gebruiker wil ik kunnen zien of de titel, beschrijving en brand overeen komen bij de livescore.
 
-**FR-06** Als gebruiker wil ik de livescore kunnen zien in het WoC dashboard zodat alles in een centraal systeem zichtbaar is.
-
-**FR-07** Als gebruiker wil ik retailers kunnen toevoegen aan het dashboard.
-
-**FR-08** Als gebruiker wil ik de retailers kunnen aanpassen en hergroeperen op het dashboard.
-
-**FR-09** Als gebruiker wil ik kunnen zien of de titel, beschrijving en afbeelding overeen komen.
-
-**FR-10** Als ontwikkelaar wil ik gebruik maken van een proxy server zodat ik vanaf nieuwe IP adressen requests kan opvragen per retailer.
+**FR-06** Als ontwikkelaar wil ik requests maken op een retailers website waarbij er maar 1 request per seconde gemaakt wordt, zodat ik niet geblokkeerd word.
 
 ### **Non-functionele requirements**
 
-**NF-01**  Als administrator wil ik dat alle gebruikers worden opgeslagen in een database.
+**NF-01** Als gebruiker wil ik dat de website zo snel mogelijk laad wanneer ik deze bezoek, zodat ik gelijk kan kijken of de content aanwezig is.
 
-**NF-02** Als ontwikkelaar wil ik dat de live score wordt bijgehouden in een database.
+**NF-02** Als ontwikkelaar wil ik dat de live score wordt bijgehouden in een database, zodat deze makkelijk opgehaald kan worden.
 
-**NF-03** Als gebruiker wil ik dat de website zowel voor desktop, tablet en mobiel de content overal leesbaar is.
+**NF-03** Als ontwikkelaar wil ik dat de live score elke keer bij een aanpassing van een excel bestand word gedraaid, zodat de live scores up to date blijven.
 
-**NF-04** Als gebruiker wil ik dat de live score elke week wordt opgehaald.
+**NF-04** Als ontwikkelaar wil ik dat alle applicaties maintainable en scalable zijn zodat er in de toekomst gemakkelijk functionaliteit kan worden toegevoegd.
 
-**NF-05** Als gebruiker wil ik dat na het ophalen van de live-score deze binnen 5 seconden op het dashboard staat.
+**NF-05** Als ontwikkelaar wil ik de state cachen zodat als de applicatie crasht hij niet opnieuw hoeft te beginnen.
 
-**NF-06** Als ontwikkelaar wil ik dat alle applicaties maintainable en scalable zijn zodat er in de toekomst gemakkelijk functionaliteit kan worden toegevoegd.
+### **Randvoorwaarden**
 
-**NF-07** Systeem koppelen met de database van WoC. Als ontwikkelaar wil ik het systeem koppelen aan de database van WoC zodat alles in een centraal systeem zichtbaar is.
-
-**NF-08** Als ontwikkelaar wil ik de state cachen zodat als de applicatie crasht hij niet opnieuw hoeft te beginnen.
-
-**NF-09** Als gebruiker wil ik dat de website binnen één seconden is geladen.
+* Er word gebruik gemaakt van een web crawler en web scraper om content te controleren bij retailers.
+* Er word gebruik gemaakt van AWS de applicatie(s) te draaien.
+* Na elke request word er een seconden gewacht voordat er een nieuwe request word gemaakt bij een retailer website.
+* Er word gebruik gemaakt van Python voor de back-end.
+* Er word gebruik gemaakt van Next.js voor de front-end.
+* Er word gebruik gemaakt van een PostgreSQL database.
