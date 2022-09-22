@@ -27,20 +27,6 @@ ___
 
 **FR-10** Als ontwikkelaar wil ik gebruik maken van een proxy server zodat ik vanaf nieuwe IP adressen requests kan opvragen per retailer.
 
-|        |Must    |Should  |Could   |Won't   |
-|--------|---------|--------|--------|--------|
-|FR-01|x|-|-|-|
-|FR-02|-|x|-|-|
-|FR-03|x|-|-|-|
-|FR-04|x|-|-|-|
-|FR-05|x|-|-|-|
-|FR-06|-|-|-|x|
-|FR-07|x|-|-|-|
-|FR-08|-|x|-|-|
-|FR-09|x|-|-|-|
-|FR-10|-|x|-|-|
-___
-
 ### **Non-functionele requirements**
 
 **NF-01**  Als administrator wil ik dat alle gebruikers worden opgeslagen in een database.
@@ -60,15 +46,3 @@ ___
 **NF-08** Als ontwikkelaar wil ik de state cachen zodat als de applicatie crasht hij niet opnieuw hoeft te beginnen.
 
 **NF-09** Als gebruiker wil ik dat de website binnen één seconden is geladen.
-
-|  -   |Must    |Should  |Could   |Won't   |
-|---|--------|--------|--------|--------|
-|NF-01|x|-|-|-|
-|NF-02|x|-|-|-|
-|NF-03|x|-|-|-|
-|NF-04|-|-|x|-|
-|NF-05|-|x|-|-|
-|NF-06|-|x|-|-|
-|NF-07|-|-|-|x|
-|NF-08|-|x|-|-|
-|NF-09|x|-|-|-|
