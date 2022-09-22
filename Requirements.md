@@ -15,9 +15,7 @@ ___
 
 **FR-04** Als gebruiker wil ik een specifiek product zien van een brand die bij de retailer beschikbaar is, zodat ik specifiekere data over de live score kan zien.
 
-**FR-05** Als gebruiker wil ik kunnen zien of de titel, beschrijving en brand overeen komen bij de livescore.
-
-**FR-06** Als ontwikkelaar wil ik requests maken op een retailers website waarbij er maar 1 request per seconde gemaakt wordt, zodat ik niet geblokkeerd word.
+**FR-05** Als gebruiker wil ik kunnen zien of de gegeven data overeenkomt met de retailer website doormiddel van een livescore, zodat ik een duidelijk overzicht heb.
 
 ### **Non-functionele requirements**
 
@@ -25,17 +23,19 @@ ___
 
 **NF-02** Als ontwikkelaar wil ik dat de live score wordt bijgehouden in een database, zodat deze makkelijk opgehaald kan worden.
 
-**NF-03** Als ontwikkelaar wil ik dat de live score elke keer bij een aanpassing van een excel bestand word gedraaid, zodat de live scores up to date blijven.
+**NF-03** Als ontwikkelaar wil ik dat de live score elke week geupdate word door opnieuw alle huidige data te scrapen, zodat de score up to date blijft.
 
-**NF-04** Als ontwikkelaar wil ik dat alle applicaties maintainable en scalable zijn zodat er in de toekomst gemakkelijk functionaliteit kan worden toegevoegd.
+**NF-04** Als ontwikkelaar wil ik dat alle applicaties maintainable en scalable zijn, zodat er in de toekomst gemakkelijk functionaliteit kan worden toegevoegd.
 
-**NF-05** Als ontwikkelaar wil ik de state cachen zodat als de applicatie crasht hij niet opnieuw hoeft te beginnen.
+**NF-05** Als ontwikkelaar wil ik de state cachen, zodat als de applicatie crasht het niet opnieuw hoeft te beginnen.
+
+**NF-06** Als ontwikkelaar wil ik na elke request dat er een seconden gewacht word, voordat er een nieuwe request word gemaakt bij een retailer website, zodat het ip niet geblokkeerd word.
 
 ### **Randvoorwaarden**
 
 * Er word gebruik gemaakt van een web crawler en web scraper om content te controleren bij retailers.
-* Er word gebruik gemaakt van AWS de applicatie(s) te draaien.
-* Na elke request word er een seconden gewacht voordat er een nieuwe request word gemaakt bij een retailer website.
+* Er word gebruik gemaakt van Lambda functies binnen AWS voor de API.
+* Er word gebruik gemaakt van localhost tijdens development.
 * Er word gebruik gemaakt van Python voor de back-end.
 * Er word gebruik gemaakt van Next.js voor de front-end.
 * Er word gebruik gemaakt van een PostgreSQL database.
