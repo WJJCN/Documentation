@@ -72,5 +72,5 @@
 * **Error Response:**
 
   * **Code:** 403 Forbidden <br />
-    **Content:** `{ "message" : "Forbiddem" }`
+    **Content:** `{ "message" : "Forbidden" }`
     
