@@ -5,7 +5,7 @@
   
 * **URL**
 
-  /all_products_with_score
+  /get_all_products_by_brand_and_retailer
 
 * **Method:**
  
