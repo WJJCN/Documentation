@@ -5,7 +5,7 @@
   
 * **URL**
 
-  /get_all_products_by_brand_and_retailer
+  /get_products_by_brand_and_retailer
 
 * **Method:**
  
