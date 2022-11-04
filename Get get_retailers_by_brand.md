@@ -58,3 +58,6 @@
   * **Code:** 403 Forbidden <br />
     **Content:** `{ "message" : "Forbidden" }`
     
+  * **Code:** 400 Bad Request <br />
+    **Content:** `{ "message" : "brand is not defined!" }`
+    
