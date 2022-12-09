@@ -66,14 +66,16 @@ Om dit programma te laten werken moet Python versie 3.10 op de pc zijn geïnstal
 python zijn geïnstalleerd zijn.
 
 ### Gebruikte libraries
->from datetime import datetime  
->from datetime import date  
->from typing import re  
->from bs4 import BeautifulSoup  
->from urllib.parse import urlparse, urljoin 
->from bson.objectid import ObjectId   
->import requests  
->import pymongo  
->import sys  
->import re  
->import certifi  
+```python
+from datetime import datetime  
+from datetime import date  
+from typing import re  
+from bs4 import BeautifulSoup  
+from urllib.parse import urlparse, urljoin 
+from bson.objectid import ObjectId   
+import requests  
+import pymongo  
+import sys  
+import re  
+import certifi  
+```
