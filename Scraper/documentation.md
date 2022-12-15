@@ -51,7 +51,9 @@ URL: https://www.ah.nl/producten/product/wi229611/bullit-energy-drink-suikervrij
 
 Het complete product object vanuit de database samen met de gevonden URL wordt doorgestuurd naar het 'vergelijk script'.
 
--- COMPARE DOCUMENTATION HERE --
+Het vergelijk script haalt de gegeven URL op van het internet. De opgehaalde pagina wordt terug gegeven in HTML, dit wordt in een beautifullsoup object gezet. Beatifullsoup maakt het een stuk eenvoudiger om data van de pagina's af te halen.
+
+Alle tekst bevattende elementen worden van de pagina af gehaald. Er wordt dan in een loopje constant over de elementen heen geloopt. Bij dit loopen wordt de gevonden tekst op van de URL vergeleken met de correcte teksten uit de database. Zijn de teksten 100% hetzelfde, dan wordt dit aangegeven als gevonden in de database. Nadat alles is vergeleken op 100% correct wordt er gekeken of er teksten zijn op de website die lijken op de correcte teksten. ALs laatste wordt dit aan de database toegevoegd en kan het in de front-end verwerkt worden.
 
 Nadat alles is vergeleken geeft het script aan of je het nog een keer wilt laten draaien. Als je 'y' intypt, gaat het script nog een keer draaien en zal dus nieuwe logs, en history points aanmaken in de database. Als er 'n' of iets anders willekeurigs wordt ingevoerd, wordt het script beëindigd.
 
