@@ -8,7 +8,7 @@ Get JWT token to login
  
   `GET`
   
-  * **Data Params**
+* **Data Params**
 
   `{  password: "admin" }`
 
