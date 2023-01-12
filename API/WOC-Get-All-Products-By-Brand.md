@@ -8,6 +8,10 @@ Get all products by 1 brand name
  
   `GET`
 
+* **Data Params**
+
+  `{brand: "Bullit"}`
+
 * **Success Response:**
 
   * **Code:** 200 <br />
