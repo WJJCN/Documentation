@@ -1,4 +1,4 @@
-Update the scrape date and time
+Update scrape now
   
 * **URL**
 
