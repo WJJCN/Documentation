@@ -10,6 +10,10 @@ Get all Retailers and the products from the retailers from 1 brand
 
 * **Data Params**
 
+  `{ brand: "Bullit" }`
+
+* **Data Params**
+
   `{ brand : "Bullit" }`
 
 * **Success Response:**
