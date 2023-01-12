@@ -7,6 +7,10 @@ Get JWT token to login
 * **Method:**
  
   `GET`
+  
+  * **Data Params**
+
+  `{  password: "admin" }`
 
 * **Success Response:**
 
