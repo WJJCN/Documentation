@@ -4,12 +4,13 @@ De applicatie wordt gestart via een cmd terminal. Na het starten gaat het script
 Daarna gaat het script kijken of er producten vanuit de database zich bevinden in de gevonden linkjes. Ook checkt deze functie of er al een URL bij het product staat in de database, zoniet, wordt de gevonden link gebruikt en deze wordt geupdate in de database. Als er een link bij het product gevonden is worden deze meegegeven aan het 'vergelijk script'. Daarna begint het complete script opnieuw tot dat de lijst met retailers leeg is.
 
 ## Hoe werkt het
-Als je een cmd terminal geopend hebt op de locatie waar het main.py script staat, start je het programma door in de terminal te typen: 
+Als je een cmd terminal geopend hebt op de locatie waar het checker.py script staat, start je het programma door in de terminal te typen: 
 ```shell
-python3 main.py
+python3 checker.py
 ```
+Het script draait continu, deze checkt om de seconde de waarde van het scrapen in de database wordt aangepast naar 'True', als dit gebeurd dan roept het checker.py script het main.py script aan.
 
-Als het programma helemaal is opgestart, kan er een waarschuwing komen bij welke retailer het scrapen niet enabled is. 
+Als het programma helemaal is opgestart, kan er een waarschuwing komen bij welke retailer het scrapen niet enabled is. Dit kun je gewoon aangeven met y/n te typen in de terminal en vervolgens op enter te klikken.
 
 ```shell
 [WARN] Retailer 'Dirk' is disabled for scraping.
@@ -55,7 +56,7 @@ Het vergelijk script haalt de gegeven URL op van het internet. De opgehaalde pag
 
 Alle tekst bevattende elementen worden van de pagina af gehaald. Er wordt dan in een loopje constant over de elementen heen geloopt. Bij dit loopen wordt de gevonden tekst op van de URL vergeleken met de correcte teksten uit de database. Zijn de teksten 100% hetzelfde, dan wordt dit aangegeven als gevonden in de database. Nadat alles is vergeleken op 100% correct wordt er gekeken of er teksten zijn op de website die lijken op de correcte teksten. ALs laatste wordt dit aan de database toegevoegd en kan het in de front-end verwerkt worden.
 
-Nadat alles is vergeleken geeft het script aan of je het nog een keer wilt laten draaien. Als je 'y' intypt, gaat het script nog een keer draaien en zal dus nieuwe logs, en history points aanmaken in de database. Als er 'n' of iets anders willekeurigs wordt ingevoerd, wordt het script beëindigd.
+Nadat alles is vergeleken geeft het script aan of je het nog een keer wilt laten draaien. Als je 'y' intypt, gaat het script nog een keer draaien en zal dus nieuwe logs, en history points aanmaken in de database. Als er 'n' of iets anders willekeurigs wordt ingevoerd, wordt het script beëindigd. Deze gaat dan terug naar het checker.py script, waar wordt gekeken wanneer de waarde in de database weer op 'True' wordt gezet.
 
 ```shell
 [SYSTEM] Do you want to run the script again? y/n
@@ -75,6 +76,7 @@ from typing import re
 from bs4 import BeautifulSoup  
 from urllib.parse import urlparse, urljoin 
 from bson.objectid import ObjectId   
+import time  
 import requests  
 import pymongo  
 import sys  
